@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡WELCOME</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+/* BACKGROUND IMAGE (HOME AREA) */
+body{
+    
+  color:white;
+
+  background:url("blog.jpg") 
+  no-repeat top;
+
+  background-size:100% 31%;  /* 👈 width + height control */
+
+  background-color:black;
+  min-height:100vh;
+
+}
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  backdrop-filter:blur(10px);
+}
+
+nav h1{
+  color:#38bdf8;
+}
+
+nav a{
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:50px;
+  
+}
+
+.hero span{
+  color:#38bdf8;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:18px;
+  opacity:0.8;
+}
+
+.btn{
+  margin-top:25px;
+  padding:14px 30px;
+  background:#38bdf8;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  background:#0ea5e9;
+}
+
+/* SKILLS SECTION (COLOR AREA) */
+#skills{
+  background:#0f172a;
+  padding:80px 60px;
+  text-align:center;
+}
+
+/* PROJECTS SECTION (COLOR AREA) */
+#projects{
+  background:#000000;
+  padding:80px 60px;
+  text-align:center;
+}
+
+/* CONTACT SECTION (COLOR AREA) */
+#contact{
+  background:#000000;
+  padding:80px 60px;
+  text-align:center;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  padding:25px;
+  border-radius:15px;
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:rgba(56,189,248,0.2);
+}
+
+/* SKILLS BOX */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.skill-box{
+  padding:25px;
+  border-radius:15px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
+}
+
+.skill-box h3{
+  color:#38bdf8;
+  margin-bottom:15px;
+}
+
+.skill-box ul{
+  list-style:none;
+  line-height:2;
+}
+
+/* INPUTS */
+input, textarea{
+  width:80%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:8px;
+}
+
+/* BUTTON */
+button{
+  padding:12px 25px;
+  background:#38bdf8;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.7);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>⚡WELCOME</h1>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO (IMAGE AREA) -->
+<section class="hero" id="home">
+  <h2>Hi, I'm <span>Eng: Khaalid Maxamed Ismacil</span></h2>
+  <p>Renewable Energy & Web Developer</p>
+  <button class="btn">View My Work</button>
+</section>
+
+<!-- SKILLS (COLOR AREA) -->
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills">
+
+    <div class="skill-box">
+      <h3>💻 Web Development</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>⚡ Electrical Engineering</h3>
+      <ul>
+        <li>Solar Installation</li>
+        <li>Wind Power</li>
+        <li>Solar Thermal</li>
+        <li>House Troubleshooting</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS (COLOR AREA) -->
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Calculator App</h3>
+      <p>Modern UI calculator</p>
+    </div>
+
+    <div class="card">
+      <h3>Todo App</h3>
+      <p>Task manager system</p>
+    </div>
+
+    <div class="card">
+      <h3>Engineering Projects</h3>
+      <p>Renewable energy systems</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT (COLOR AREA) -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <p>📧 khaalid@example.com</p>
+  <p>📞 +252 63 XXX XXX</p>
+
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea rows="5" placeholder="Message"></textarea><br>
+  <button>Send Message</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Eng: Khaalid Maxamed Ismacil</p>
+</footer>
+
+</body>
+</html>
